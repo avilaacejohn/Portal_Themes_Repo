@@ -51,6 +51,11 @@ setTimeout(function(){
 
 // credits to Sir Harold 
 
+
+
+
+
+
 //------------END----------------// --------------- >> second commit to universal MEET THE STAFF COMPONENT ON HOME PAGE QUICKIE LANG Franclin James Lim - 2018-march-20
 
 
@@ -69,11 +74,42 @@ setTimeout(function(){
 
 
 //-------------------------------//
-          Descrption here
+VIDEOS THAT WONT AUTOPLAY OVERRIDE SCRIPT
 //-------------------------------//
 
 //-----------START---------------//
           
-       //your script here
+setInterval(function(){
+    $('.covervid-video').get(0).play();
+},500);
+
+          //   (.covervid-video <-- is the class for the video.) 
+          //     Just add your class here.
+
+//------------END----------------// --------------- >> second commit to universal js-cheats VIDEOS THAT WONT AUTOPLAY OVERRIDE SCRIPT Franclin James Lim - 2018-march-21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------//
+           Description
+//-------------------------------//
+
+//-----------START---------------//
           
+//       Place your script here
+
 //------------END----------------//
