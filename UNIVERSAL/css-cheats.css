@@ -13,3 +13,39 @@
 
 
 
+/******************************************
+********* TABLE BOOTSTRAP DESIGN **********
+/******************************************/
+
+/****************START*******************/
+
+table {
+    display: table;
+    border-spacing: 2px;
+    border-color: grey;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #a7a7a7;
+    font-size: 0.95em;
+}
+thead tr th {
+    padding: 3% 6% !important;
+    background-color: #7594aa;
+    color: #fff;
+    border-right: 1px solid #a7a7a7;
+    border-bottom: unset;
+    border-left: unset;
+}
+td{
+    border-bottom: unset;
+    border-left: 1px solid #a2a2a2;
+}
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/****************END**********************/ "2nd commit for css-cheats Table Bootstrap Design 2018-March-22" - Franclin James Lim
+
