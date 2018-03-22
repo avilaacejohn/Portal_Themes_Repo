@@ -18,5 +18,9 @@
     }
 }
 
+/*Resize text on a lists*/
+li {
+     font-size: 16px;
+}
 
 
