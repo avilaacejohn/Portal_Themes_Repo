@@ -1,0 +1,100 @@
+________________________________________________________________________________________________
+
+Module 1 - New Patient Special
+________________________________________________________________________________________________
+
+<div class="exclusive_offer"><img alt="Exclusive Offer Image" class="exclusive_offer_image" src="/images/common/checkmark-icon.png" />
+<h3>Free 1 Hour Massage for New Patients.</h3>
+
+<h3></h3>
+
+<h3>Mention this offer during your initial visit and we can schedule you an appointment with our fabulous massage therapist!</h3>
+
+<p></p>
+</div>
+
+<div>%LEAD_GENERATION_FORM%</div>
+
+________________________________________________________________________________________________
+
+Module 2 -  Read Our Reviews
+________________________________________________________________________________________________
+
+<div class="homeBoxContentWrap">
+<p>%CLIENT_BUSINESSNAME% reviews run through Demand Force<br />
+<a class="boxLink pgLink02" href="http://www.demandforced3.com/b/etile_reviews_popup.jsp?d3cp_exid=wholehealthchiro&amp;d3cp_source=My%20Website%27,%27newwindow%27,%20%27width=790px,%20top=0,%20left=0,%20toolbar=no,%20menubar=no,%20scrollbars=1,%20resizable=1,%20location=no,%20status=0" target="_blank">Click Here to Read</a></p>
+</div>
+________________________________________________________________________________________________
+
+Module 3 - 
+________________________________________________________________________________________________
+
+<!-- Begin Follow Us Module Code -->
+<div class="follow_us">
+<p class="social phone">Call today: <span>%CLIENT_PHONE%</span></p>
+
+<div class="social icons"><!-- Default Icons --><a class="facebook_icon" href="https://www.facebook.com/ChiroIssaquah" target="_blank" title="%CLIENT_BUSINESSNAME% on Facebook"><span>Facebook</span></a> <a class="twitter_icon" href="https://twitter.com/ChiroIssaquah" target="_blank" title="%CLIENT_BUSINESSNAME% on Twitter"><span>Twitter</span></a></div>
+</div>
+<!-- End  -->
+
+________________________________________________________________________________________________
+
+Module 4 - Request An Appointment
+________________________________________________________________________________________________
+
+<div class="homeBoxContentWrap">
+<p>We will do our best to accommodate your busy schedule. Request an appointment today!</p>
+<a href="http://www.demandforced3.com/b/etile_scheduler_popup.jsp?d3cp_exid=wholehealthchiro&amp;d3cp_source=My%20Website%27,%27newwindow%27,%20%27width=790px,%20top=0,%20left=0,%20toolbar=no,%20menubar=no,%20scrollbars=1,%20resizable=1,%20location=no,%20status=0" target="_blank">Request Now</a></div>
+
+________________________________________________________________________________________________
+
+Module 5 - Read About Our Services
+________________________________________________________________________________________________
+<div class="homeBoxContentWrap">
+<p>We strive to provide complete care for our patients. Learn more about all the services we provide.</p>
+<a class="boxLink pgLink02" href="services.html">Read More</a></div>
+<script>
+  $(".pgLnk02").attr("href", "http://" + window.location.hostname + "/services.html"); 
+</script>
+
+________________________________________________________________________________________________
+
+Module 6 - Contact
+________________________________________________________________________________________________
+
+<div class="contact_info" itemscope="itemscope" itemtype="http://schema.org/LocalBusiness"><span itemprop="name">%CLIENT_BUSINESSNAME%</span>
+<div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">%CLIENT_ADDRESS%</span><br />
+<span itemprop="addressLocality">%CLIENT_CITY%</span>, <span itemprop="addressRegion">%CLIENT_STATE%</span> <span itemprop="postalCode">%CLIENT_ZIP%</span></div>
+<a class="launch_google_maps" href="http://maps.google.com/maps?q=%URL_ENCODE_START%%CLIENT_ADDRESS% %CLIENT_CITY%, %CLIENT_STATE% %CLIENT_ZIP%%URL_ENCODE_END%" title="Get Directions">Get Directions</a><br />
+&nbsp;
+<ul>
+	<li>Phone: <span itemprop="telephone">%CLIENT_PHONE%</span></li>
+	<li>Fax: <span itemprop="faxNumber">%CLIENT_FAX%</span></li>
+	<li><a class="fancybox-emailus-iframe" href="?send_doctor=1" rel="group" title="Email Us">Email Us</a></li>
+</ul>
+</div>
+
+<div id="miniMap">%CLIENT_MAP_SMALL%</div>
+<!-- Begin Office Hours Module Code -->
+
+<div class="office_hours">
+<p class="cc_module_title">Office Hours</p>
+%CLIENT_HOURS%</div>
+
+
+________________________________________________________________________________________________
+
+Custom CSS 
+________________________________________________________________________________________________
+
+<style type="text/css">
+.services_image {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(http://imatrix.com/images/new_services.png) no-repeat;
+  width: 300px;
+  height: 108px;
+  padding-left: 300px;
+}
+</style>
