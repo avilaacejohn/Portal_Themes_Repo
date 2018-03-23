@@ -48,3 +48,47 @@ tr:nth-child(even) {
 
 /****************END**********************/ 3rd commit for css-cheats Table Bootstrap Design 2018-March-22 - Franclin James Lim
 
+
+
+
+
+
+
+
+
+
+/******************************************
+********* 4th commit for css-cheats Mobile Responsive UNDER DEVELOPMENT *****************
+/******************************************/
+
+/****************START*******************/
+
+
+
+@media(max-width:425px){
+    .wrap__container img, logo__image, .wrap--inner img{
+        height:auto!important;
+        float:none!important;
+        width:100%!important;
+        margin:unset!important;
+    }
+    .wrap__page-content img:not(.leaflet-tile), .wrap__editable img:not(.leaflet-tile), .wrap__editable-content img:not(.leaflet-tile), .staff-member img, logo__image{
+        max-width:unset!important;
+        width:100%!important;
+        height:auto!important;
+    }
+}
+@media(max-width:320px){
+    .wrap__container img, logo__image, .wrap--inner img{
+        height:auto!important;
+        float:none!important;
+        width:100%!important;
+        margin:unset!important;
+    }
+    .wrap__page-content img:not(.leaflet-tile), .wrap__editable img:not(.leaflet-tile), .wrap__editable-content img:not(.leaflet-tile), .staff-member img, logo__image{
+        max-width:unset!important;
+        width:100%!important;
+    }
+}
+
+/****************END**********************/ 4th commit for css-cheats Mobile Responsive UNDER DEVELOPMENT - 2018-March-23 - Franclin James Lim
