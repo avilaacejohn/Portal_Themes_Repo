@@ -92,3 +92,22 @@ tr:nth-child(even) {
 }
 
 /****************END**********************/ 4th commit for css-cheats Mobile Responsive UNDER DEVELOPMENT - 2018-March-23 - Franclin James Lim
+
+
+
+
+
+
+
+/******************************************
+********* Hiding checkboxes/radiobutton *****************
+/******************************************/
+
+/****************START*******************/
+
+.form-input-custom57 .custom57__label-input-container:nth-child(2n){
+display: none  !important;
+}
+
+
+/****************END**********************/
