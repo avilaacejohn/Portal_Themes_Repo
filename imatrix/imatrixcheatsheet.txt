@@ -1,0 +1,294 @@
+<!-- this is for the frame button at the frame selection page for opta sites -->
+<!-- just put it between the Choosing the Right Frames section and square face section -->
+
+<a class="lnchFrmSlctr">Select Your Frames</a>
+<div id="frameSelector">
+  <div id="facePnl" class="square">
+    <div id="lrgFrame"></div>
+  </div>
+  <div id="shapePnl">
+    <a class="square selected">Square</a>
+    <a class="oval">Oval</a>
+    <a class="oblong">Oblong</a>
+    <a class="round">Round</a>
+    <a class="heart">Heart</a>
+    <a class="triangle">Triangle</a>
+    <a class="diamond">Diamond</a>
+  </div>
+  <div id="infoPnl">
+    <div class="square">
+      <h1>Square</h1>
+      <p>A square face is often characterized by a strong jaw line, a broad forehead, and a wide chin and cheekbones. The width and length of the face are close to being equal. Frames should be selected to make the face look longer and to soften the square angles of the face. Choose frames that are slightly curved (like an oval shape) and that have more horizontal than vertical real estate.</p>
+    </div>
+    <div class="oval">
+      <h1>Oval</h1>
+      <p>The oval face is identifiable by its balanced proportions. The forehead is slightly wider than the chin and cheekbones are high. Frames should complement the natural proportions of the oval. Choose frames that are wide or wider than the broadest part of the face and that follow your brow line. Often, diamond or rectangular shapes work best for oval shapes.</p>
+    </div>
+    <div class="oblong">
+      <h1>Oblong</h1>
+      <p>Although fairly similar to an oval shape, an oblong face is longer than it is wide. The ideal frames will shorten the face by creating a break in the length of the face. Choose frames that have depth and a low bridge to shorten the nose. Try frames that are round, deep, have low-triangle shapes, or that have strong vertical lines.</p>
+    </div>
+    <div class="round">
+      <h1>Round</h1>
+      <p>A round or full face is characterized by having the same width and length. For round faces, frames that add length to the face often work best. Frames that lengthen the face are typically angular, narrow and are wider than they are deep. It is best to avoid round style frames as these will exaggerate the roundness and curves of the face.</p>
+    </div>
+    <div class="heart">
+      <h1>Heart</h1>
+      <p>A heart shaped face looks like a heart or a triangle with the point facing down. The forehead is very wide and cheekbones are high while the face narrows towards the chin. Counterbalance the narrow chin by choosing frames that are wider at the bottom. Generally, light colored and rimless frames work best, although aviator, butterfly and low-triangle styles also work well.</p>
+    </div>
+    <div class="triangle">
+      <h1>Triangle</h1>
+      <p>A base-down triangle face has a narrower forehead with full cheeks and a broad chin. To offset a broad chin, select frames that widen at the top. Great selections include frames that have heavy color accents and detail on the top part of the frames. Cat-eye shapes also work well to add width and emphasize the narrow upper part of the face.</p>
+    </div>
+    <div class="diamond">
+      <h1>Diamond</h1>
+      <p>A diamond shaped face is often characterized by high, dramatic cheekbones with a narrow eye line and jaw line. This shape is the rarest of all the shapes. Oval frames that are soft in style typically work best to highlight the eyes and cheekbones. Select frames that have detailing, distinctive brow lines, are rimless or a cat-eye shape for best results.</p>
+    </div>
+  </div>
+  <div id="framePnl">
+    <a class="prvSet"></a>
+    <a class="nxtSet"></a>
+    <div id="frameCont">
+      <ul id="frameSets">
+        <li>
+          <a><span class="frm01">Round</span></a>
+          <a><span class="frm02">Rectangle (Wire)</span></a>
+          <a><span class="frm03">Rounded Square</span></a>
+          <a><span class="frm04">Square</span></a>
+        </li>
+        <li>
+          <a><span class="frm05">Modified Oval (Wire)</span></a>
+          <a><span class="frm06">Rectangle</span></a>
+          <a><span class="frm07">Cat Eye</span></a>
+          <a><span class="frm08">Squared Cat Eye</span></a>
+        </li>
+        <li>
+          <a><span class="frm09">Oval</span></a>
+          <a><span class="frm10">Modified Round</span></a>
+          <a><span class="frm11">Modified Oval</span></a>
+          <a><span class="frm12">Wayfarer</span></a>
+        </li>
+        <li>
+          <a><span class="frm13">Aviator</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- END -->
+
+/////////////////////////////////////////////
+
+<!-- this is a quick code for the 3d spine simulator if in case a client wants the this simulator be placed in the homepage -->
+
+<p><button class="lnch3dspine">Launch the Simulator</button></p>
+<p id="frameSelector" style="display: none;">
+	<iframe style="width: 900px; height: 800px; overflow: hidden;" src="plugins/editor/cms/content/chiromatrix/3d_spine/nerve_chart/index.htm" scrolling="no" width="900" height="800">&amp;lt;span id="selection-marker-1" class="redactor-selection-marker"&amp;gt;&amp;lt;/span&amp;gt;
+	</iframe>
+</p>
+
+<!-- END -->
+
+/////////////////////////////////////////////
+
+<!--this is to help targeting specific word/element in a page -->
+<!-- usage : replace the old string with the string you want to change then at the newtext section, put their the element you want to target, make sure you to be more specific under this section -->
+
+var oldString = 'ReadMore',
+    newString = "<a href="https://my.imatrix.com/0017439/meet-the-optometrist.html" target="_blank" style="color:black;text-decoration:underline">Read More</a>",
+    newText = $('#staff .staff-member__description').html().replace(RegExp(oldString,"gi"),newString);
+
+$('#staff .staff-member__description').html(newText);
+
+<!--END-->
+
+/////////////////////////////////////////////
+
+<!--this will auto center the logo and adjust the width when in mobile display -->
+
+.logo__link.logo__left .logo__image {
+    margin: auto;
+}
+
+.logo__link.logo__left {
+    flex-direction: column;
+}
+
+<!-- END -->
+
+/////////////////////////////////////////////
+
+<!-- these scripts are useful if a site has multiple hours section. it creates a button/accordion which toggles on if clicked, just make sure you change the component's name accordingly -->
+
+<!-- this is placed at custom js file -->
+
+$('#btn1').click(function(){
+	$('#hours1').toggle(500);
+});
+
+$('#btn2').click(function(){
+	$('#hours2').toggle(500);
+});
+
+$('#btn3').click(function(){
+	$('#hours3').toggle(500);
+});
+
+<!-- while this one is placed anywhere you want -->
+
+<h3>Click each button below to see our office hours</h3>
+<button class="btn-hours" id="btn1">Hartford - Eye Deal Optical</button>
+<div class="hours-custom" id="hours1">
+     {% component 'hours_home' %}
+</div>
+<button class="btn-hours" id="btn2">Greenfield - Wal-Mart Vision Center</button>
+<div class="hours-custom" id="hours2">
+     {% component 'hours_home_2' %}
+</div>
+<button class="btn-hours" id="btn3">Pewaukee - Wal-Mart Vision Center</button>
+<div class="hours-custom" id="hours3">
+     {% component 'hours_home_3' %}
+</div> 
+
+<!-- END -->
+
+  
+/////////////////////////////////////////////
+
+<!-- this line of code basically checks if an image has a class of "dfltCntImgRt" or "dfltCntImgLt" if it does, it changes the class to "align-right" or "align-left" respectively make sure to add this at the custom js-->
+<!-- it just auto aligns the position of the images inside the editable area -->
+<!-- note, only tried it with opta, vet and chiro. -->
+
+if($('img').hasClass('dfltCntImgRt')){
+		$('img').removeClass("dfltCntImgRt").addClass("align-right");
+}else if($('img').hasClass('dfltCntImgLt')){
+		$('img').removeClass("dfltCntImgLt").addClass("align-left");
+}
+
+ 	or you can just set the class directly in custom css by :
+
+ 	.dfltCntImgRt {
+ 		float:right;
+ }
+
+  .dfltCntImgLt {
+    float:left;
+  }
+  
+  @media (max-width: 767px){
+  .dfltCntImgLt, dfltCntImgRt {
+    float:none;
+    margin: auto !important;
+    width: 100%;
+  }         
+}
+
+   
+<!-- END -->
+
+/////////////////////////////////////////////
+
+<!-- these css codes, target the exact image fromt the content section only -->
+.editable img, .editable__container--inner img {
+    height: auto !important;
+    margin: auto .3em .5em !important;
+}  
+@media (max-width: 767px){
+    .editable img, .editable__container--inner img {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: auto !important;
+    } 
+    .wrap__page-content p img {
+        margin: .5em auto !important;
+    }          
+}
+<!-- END -->
+/////////////////////////////////////////////
+
+<!-- these codes are optional. the purpose of this is that, it adds a polaroid-lik border to the images inside the editable area ONLY.if you wish to add these to certain images, you can just add it to the image you want  -->
+
+css
+<!--you have to add this css code first for it to work. this is for the thin polaroid-like border -->
+.polaroid {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: .25rem !important;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+script
+<!-- add these to custom js file. if you dont want to add the border to a certain img, just change the class to nopolaroid. **NOTE: it ONLY works for images inside the editable area.if you wish to add these to certain images, you can just add the class polaroid to the image you want -->
+$( document ).ready(function() {
+  if($('.editable img, .editable__container--inner img').hasClass('nopolaroid')){
+    $('.editable img, .editable__container--inner img').removeClass("polaroid");
+  }else {
+    $('.editable img, .editable__container--inner img').addClass("polaroid");
+  } 
+
+});
+
+<!-- END -->
+
+//////////////////////////////////////////
+<!-- if you will use all scripts here is the quick code-->
+
+$( document ).ready(function() {
+    
+    if($('img').hasClass('dfltCntImgRt')){
+       	$('img').removeClass("dfltCntImgRt").addClass("align-right");
+    }else if($('img').hasClass('dfltCntImgLt')){
+       	$('img').removeClass("dfltCntImgLt").addClass("align-left");
+    }
+    
+    if($('.editable img, .editable__container--inner img').hasClass('nopolaroid')){
+   	$('.editable img, .editable__container--inner img').removeClass("polaroid");
+    }else {
+       	$('.editable img, .editable__container--inner img').addClass("polaroid");
+    }  
+  
+});
+
+<!-- END -->
+
+**NOTE: these codes though still doesn't address the issue regarding the file sizes. i'm still working on it. 
+***For the meantime, you may use this site to reduce the file and image sizes : https://www.bulkresizephotos.com/
+
+/////////////////////////////////////
+
+<!-- these codes will make iframe videos responsive in every view -->
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+<!-- USAGE -->
+
+**place the videoWrapper tag to a div then inside the div, place the iframe 
+<div class="videoWrapper">
+  <iframe src="" frameborder="0"></iframe>
+</div>
+
+
+<!-- END -->
+
+
+
+
+
+I'll update these codes once in a while if I discover some bugs associated with it. I will also add codes that will help us in the future if ever I can come up with new one. If you have questions, please glip Gie Basinal. Thanks!!
