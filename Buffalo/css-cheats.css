@@ -25,11 +25,16 @@
 
 
 
-//Quote icon just uncheck Title on component.
+//Quote icon just uncheck Title on component. COPY PASTE TO JS
+
 $(document).ready(function(){
 $('.testimonials__caption').html('<span class="socialmedia__link icon icon-quote-left" aria-hidden="true" style="border: 1px solid #196af9;color: #196af9;"></span>');
 });
 
+
+setInterval(function(){
+    $('.icon-pause, .icon-play').attr('style', 'font: normal normal normal 14px/1 font-awesome');
+},500);
 
 
 
@@ -105,7 +110,7 @@ $('.testimonials__caption').html('<span class="socialmedia__link icon icon-quote
 
 
 
-
+/*OPTIONAL IMAGE CENTER STILL ON PROGRESS*/
 .wrappage-content ul, .wrappage-content ol, .wrapeditable ul, .wrapeditable ol, .wrap__page-content ul{
     clear: none;
 }
