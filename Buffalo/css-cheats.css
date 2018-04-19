@@ -85,7 +85,9 @@ $('.testimonials__caption').html('<span class="socialmedia__link icon icon-quote
 .wrap__footer{
     background-color: #485b6f !important;
 }
-
+#hamburger:before{
+    color: #000000!important;
+}
 
 
 .testimonials__caption span{
@@ -103,7 +105,7 @@ $('.testimonials__caption').html('<span class="socialmedia__link icon icon-quote
 
 
 
-/*optional auto adjustment of images*/
+
 .wrappage-content ul, .wrappage-content ol, .wrapeditable ul, .wrapeditable ol, .wrap__page-content ul{
     clear: none;
 }
