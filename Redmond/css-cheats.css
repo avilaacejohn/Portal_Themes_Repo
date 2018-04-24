@@ -15,3 +15,31 @@
 
 
 
+/******************************************
+********* LIGHTBLUE THEME FIX *************
+/******************************************/
+
+/****************START*******************/
+
+.wrap__header--inner{
+    background-color:white;
+}
+.mm-panel{
+    background-color:#71a7b7!important;
+}
+
+
+
+@media (max-width: 991px){
+    .wrap__logoHeader{
+        background: white!important;
+    }
+}
+
+/****************END**********************/
+
+
+
+
+
+
