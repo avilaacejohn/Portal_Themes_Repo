@@ -99,7 +99,9 @@ setInterval(function(){
     margin: 0 auto;
     display: block;
 }
-
+.locations__title{
+     color: #000;
+}
 
 
 
