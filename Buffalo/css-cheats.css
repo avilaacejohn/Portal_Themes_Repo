@@ -46,8 +46,6 @@ setInterval(function(){
 
 
 
-
-
 .wrap__header--top{
     background-color:rgb(255, 255, 255);
 }
@@ -59,8 +57,9 @@ setInterval(function(){
     background-color: #2898f1!important;
     color: white!important;
 }
-.wrap__socialmediaFooter .socialmedia__item{
-    filter:unset!important;
+.wrap__footer .socialmedia__link{
+    border: 1px solid #d2d2d2!important;
+    color: #eaeaea!important;
 }
 /* .slider__title{filter:invert(100%);} OPTIONAL*/
 .staff-member__image {
@@ -110,6 +109,7 @@ setInterval(function(){
     margin: 0 auto;
     display: block;
 }
+
 
 
 
