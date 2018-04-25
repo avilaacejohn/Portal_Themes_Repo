@@ -25,6 +25,9 @@
 
 
 
+//========BUFFALO WHITE THEME======
+
+
 //Quote icon just uncheck Title on component. COPY PASTE TO JS
 
 $(document).ready(function(){
@@ -42,11 +45,19 @@ setInterval(function(){
 
 
 
+
+
+
 .wrap__header--top{
     background-color:rgb(255, 255, 255);
 }
-.socialmedia__item{
-    filter:invert(100%);
+.socialmedia__link{
+    border: 1px solid #5a76ff!important;
+    color: #5a76ff!important;
+}
+.socialmedia__link:hover {
+    background-color: #2898f1!important;
+    color: white!important;
 }
 .wrap__socialmediaFooter .socialmedia__item{
     filter:unset!important;
