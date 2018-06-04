@@ -120,6 +120,44 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+//-------------------------------//
+           Description
+//-------------------------------//
+
+//-----------START---------------//
+
+NAVBAR FIX
+
+.wrap__navigation .wrap--inner {
+    max-width: 1000px;
+}
+setInterval(function(){
+$('.wrap__navigation .wrap--inner').attr('style','max-width: 1240px;');
+},2000);
+
+//------------END----------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //-------------------------------//
            Description
 //-------------------------------//
