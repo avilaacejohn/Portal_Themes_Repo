@@ -43,3 +43,46 @@
 
 
 
+
+
+
+
+
+/******************************************
+********* RED THEME FIX *************
+/******************************************/
+
+/****************START*******************/
+
+
+.wrap__slider .slider__button a{
+    transition: background 0.25s,font 0.25s;
+    background:red;
+    color:white;
+}
+.wrap__slider .slider__button a:hover{
+    transition: color 0.25s,font 0.25s;
+    background:#f2f2e8;
+    color:#333333;
+}
+#navigation_header, .navigation__item, .mm-next, .day__name{
+    background:red!important;
+}
+.navigation .mm-hasnavbar.sublevel-1 .navigation__item, .sublevel-1.mm-panel.mm-hasnavbar.mm-highest.mm-current.mm-opened{
+    background: #9bb998!important;
+}
+.navigation__item a{
+    color:white!important;
+}
+.wrap__header{
+    background:white;
+}
+.wrap__locationsHeader .location{
+    background:#050505;
+}
+.hours__name{
+    font-weight:bolder;
+    font-size:26px;
+}
+
+/****************END**********************/
