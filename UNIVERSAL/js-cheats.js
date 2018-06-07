@@ -185,7 +185,7 @@ $('.wrap__navigation .wrap--inner').attr('style','max-width: 1240px;');
     z-index: -1;
     top:0px;
 }
-.wrap__rotate-container--bottom.fixed .undrlogobg{
+.wrap__rotate-container--bottom.fixed .undrlogobg, .wrap__header.fixed .undrlogobg{
     display:none;
 }
 
