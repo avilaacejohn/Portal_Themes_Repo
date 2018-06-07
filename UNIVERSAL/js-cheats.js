@@ -154,6 +154,69 @@ $('.wrap__navigation .wrap--inner').attr('style','max-width: 1240px;');
 
 
 
+//-------------------------------//
+    WHITE BACKGROUND ON LOGO
+//-------------------------------//
+
+//-----------START---------------//
+          //add this to custom.js
+    var x = 0;
+    setInterval(function(){
+        if (x === 0){
+            $('.undrlogobg').appendTo('.wrap__logoHeader .logo');//this will append the div below the logo
+        x++;
+        }
+        else{
+            return;
+        }
+    },500);
+
+
+/*
+
+//========ADD THIS TO CUSTOM CSS============
+.undrlogobg{
+    width: 431px;
+    height: 135px;
+    position: absolute;
+    padding: 25px;
+    background-color: #ffffff9e;
+    border-radius: 10px!important;
+    z-index: -1;
+    top:0px;
+}
+
+
+//add this to the header partials under custom-header
+
+<div class="undrlogobg"></div>
+
+
+
+*/
+
+//------------END----------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
