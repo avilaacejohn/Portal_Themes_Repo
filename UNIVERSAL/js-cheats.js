@@ -185,6 +185,11 @@ $('.wrap__navigation .wrap--inner').attr('style','max-width: 1240px;');
     z-index: -1;
     top:0px;
 }
+.wrap__rotate-container--bottom.fixed .undrlogobg{
+    display:none;
+}
+
+
 
 
 //add this to the header partials under custom-header
