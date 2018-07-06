@@ -181,3 +181,129 @@
 <div style="display:none" id="popup" class="test">test</div>
 
 <!----------------END---------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------->
+      COUPON IMAGE FIX
+<!----------------------------------------->
+
+<!---------------START--------------------->
+
+<div style="display:none" id="popup" class="test">test</div>
+
+
+
+/***************************************************************/
+------------------------------------------------------------------------------------------------
+YOUR HTML & CSS
+------------------------------------------------------------------------------------------------
+<div id="printableArea">
+  <div class="area_hidden">
+        <h2>Performance Chiropractic</h2>
+        <p>1527 10TH ST, <br>MARYSVILLE WA, USA 98270<br>
+           Phone: 360-547-4044<br>
+           Fax: 360-547-4045
+        </p>
+        <p><strong>CONTACT: </strong>Dr. VUONG VO</p>
+     <hr>
+     </div>
+
+        <div id="coupon" align="center" style='margin: auto; width: 475px; height: 295px; background-image: url("//my.chiromatrix.com/0022947/storage/app/media/images/coupon.jpg");'>
+
+        
+        <p><img src="//my.chiromatrix.com/0022947/storage/app/media/images/coupon.jpg" style="width: 475px; height: auto; display: block;"></p> 
+
+        </div>
+<p><br></p>
+     <div class="area_hidden">
+
+     <hr>
+      <p> &copy; Copyright 2018 Performance Chiropractic, All Rights Reserved</p>
+     </div> 
+</div>
+
+<p style="text-align: center;"><input onclick="printDiv('printableArea')" value="Print This Offer" type="button"></p>
+
+
+
+
+
+
+<style type="text/css">
+  .area_hidden{
+    display: none
+  }
+
+  @media print {
+    .area_hidden{
+      display: block;
+    }
+    img {
+        -webkit-print-color-adjust: exact;
+      }
+      #coupon{
+        -webkit-print-color-adjust: exact;
+      }
+  }
+  -webkit-print-color-adjust:exact;
+</style>
+
+/***************************************************************/
+
+/***************************************************************/
+------------------------------------------------------------------------------------------------
+YOUR SCRIPT
+------------------------------------------------------------------------------------------------
+function printDiv(printableArea) {
+     var printContents = document.getElementById(printableArea).innerHTML;
+     var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print(); 
+        document.body.innerHTML = originalContents;
+}
+/***************************************************************/
+
+
+<!----------------END---------------------->
