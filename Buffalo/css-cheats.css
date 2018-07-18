@@ -91,7 +91,7 @@ setInterval(function(){
 .wrap__home-offer__background{
     background-color:#3a6cc2!important;
 }
-#home-offer, .wrap__articles{
+#home-offer, .wrap__home .wrap__articles{
     background-color: #3a6cc2!important;
 }
 .wrap__page-content h1,.wrap__page-content h2,.wrap__page-content h3,.wrap__page-content h4,.wrap__page-content p,.wrap__page-content span,.wrap__page-content a,.wrap__page-content b,.wrap__page-content div,.wrap__page-content button,.wrap__page-content input,.wrap__page-content select,.wrap__page-content textarea,.wrap__page-content html,.wrap__page-content strong, body{
