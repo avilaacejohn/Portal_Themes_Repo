@@ -133,7 +133,7 @@ setInterval(function(){
 
 
 
-/*TEAL COLOR*/
+/*TEAL COLOR FIX USE STYLE BUFFALO CHARCOAL change main color to white*/
 
 
 
@@ -244,7 +244,7 @@ ul li.featuredblock__item:nth-child(2):hover .linkz a{
     text-decoration:unset!important;
 }
 .wrap__fullwidth a{
-    color:unset!important;
+    color:inherit!important;
 }
 
 
@@ -252,11 +252,9 @@ ul li.featuredblock__item:nth-child(2):hover .linkz a{
     border: 1px solid #797979;
 }
 
-
-
-
-
-
+.navigation:not(.mm-menu) .navigation__list > .navigation__item .sublevel-1 .opener{
+    background:#029494!important;
+}
 
 
 
