@@ -85,7 +85,7 @@ setInterval(function(){
 .navigation:not(.mm-menu) .navigation__list > .navigation__item .sublevel-1 a{
     background: #f8fafc !important;
 }
-.location__phone a{
+.locations__title.component__title,.location__phone a{
     color:#196af9 !important;
 }
 .wrap__home-offer__background{
