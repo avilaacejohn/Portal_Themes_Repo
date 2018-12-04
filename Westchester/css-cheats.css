@@ -16,6 +16,45 @@
 
 
 
+/* fixes FOR Westchester */
+.featuredblock__image{ /*this is to show the image if you want to show featuredblock image*/
+    height: 185px;
+}
+
+
+.featuredblock__description{
+    height:100px;
+}
+
+span.featuredblock__link-text{
+    bottom: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+@media(max-width:1024px){
+    .wrap__slider .slider .align-center{
+        left: 80%!important;
+    }
+}
+@media(max-width:425px){
+    .wrap__slider .slider .align-center{
+        left: 85%!important;
+    }
+}
+@media(max-width:375px){
+    .wrap__slider .slider .align-center{
+        left: 90%!important;
+    }
+}
+@media(max-width:320px){
+    .wrap__slider .slider .align-center{
+        left: 95%!important;
+    }
+}/*DESCRIPTION: Testimonials on home dark color to enhance text - second commit Franclin James Lim - 2018-december-05 */
+
 
 
 
