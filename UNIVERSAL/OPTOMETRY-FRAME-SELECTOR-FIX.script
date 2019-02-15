@@ -1,0 +1,154 @@
+======================FRAME SELECTOR COPY THIS TO CONTENT================
+<p><a class="lnchFrmSlctr">Select Your Frames</a></p>
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================FRAME SELECTOR COPY THIS TO PAGE====================
+
+<div id="frameSelector">
+  <div id="facePnl" class="square">
+    <div id="lrgFrame"></div>
+  </div>
+  <div id="shapePnl">
+    <a class="square selected">Square</a>
+    <a class="oval">Oval</a>
+    <a class="oblong">Oblong</a>
+    <a class="round">Round</a>
+    <a class="heart">Heart</a>
+    <a class="triangle">Triangle</a>
+    <a class="diamond">Diamond</a>
+  </div>
+  <div id="infoPnl">
+    <div class="square">
+      <h1>Square</h1>
+      <p>A square face is often characterized by a strong jaw line, a broad forehead, and a wide chin and cheekbones. The width and length of the face are close to being equal. Frames should be selected to make the face look longer and to soften the square angles of the face. Choose frames that are slightly curved (like an oval shape) and that have more horizontal than vertical real estate.</p>
+    </div>
+    <div class="oval">
+      <h1>Oval</h1>
+      <p>The oval face is identifiable by its balanced proportions. The forehead is slightly wider than the chin and cheekbones are high. Frames should complement the natural proportions of the oval. Choose frames that are wide or wider than the broadest part of the face and that follow your brow line. Often, diamond or rectangular shapes work best for oval shapes.</p>
+    </div>
+    <div class="oblong">
+      <h1>Oblong</h1>
+      <p>Although fairly similar to an oval shape, an oblong face is longer than it is wide. The ideal frames will shorten the face by creating a break in the length of the face. Choose frames that have depth and a low bridge to shorten the nose. Try frames that are round, deep, have low-triangle shapes, or that have strong vertical lines.</p>
+    </div>
+    <div class="round">
+      <h1>Round</h1>
+      <p>A round or full face is characterized by having the same width and length. For round faces, frames that add length to the face often work best. Frames that lengthen the face are typically angular, narrow and are wider than they are deep. It is best to avoid round style frames as these will exaggerate the roundness and curves of the face.</p>
+    </div>
+    <div class="heart">
+      <h1>Heart</h1>
+      <p>A heart shaped face looks like a heart or a triangle with the point facing down. The forehead is very wide and cheekbones are high while the face narrows towards the chin. Counterbalance the narrow chin by choosing frames that are wider at the bottom. Generally, light colored and rimless frames work best, although aviator, butterfly and low-triangle styles also work well.</p>
+    </div>
+    <div class="triangle">
+      <h1>Triangle</h1>
+      <p>A base-down triangle face has a narrower forehead with full cheeks and a broad chin. To offset a broad chin, select frames that widen at the top. Great selections include frames that have heavy color accents and detail on the top part of the frames. Cat-eye shapes also work well to add width and emphasize the narrow upper part of the face.</p>
+    </div>
+    <div class="diamond">
+      <h1>Diamond</h1>
+      <p>A diamond shaped face is often characterized by high, dramatic cheekbones with a narrow eye line and jaw line. This shape is the rarest of all the shapes. Oval frames that are soft in style typically work best to highlight the eyes and cheekbones. Select frames that have detailing, distinctive brow lines, are rimless or a cat-eye shape for best results.</p>
+    </div>
+  </div>
+  <div id="framePnl">
+    <a class="prvSet"></a>
+    <a class="nxtSet"></a>
+    <div id="frameCont">
+      <ul id="frameSets">
+        <li>
+          <a><span class="frm01">Round</span></a>
+          <a><span class="frm02">Rectangle (Wire)</span></a>
+          <a><span class="frm03">Rounded Square</span></a>
+          <a><span class="frm04">Square</span></a>
+        </li>
+        <li>
+          <a><span class="frm05">Modified Oval (Wire)</span></a>
+          <a><span class="frm06">Rectangle</span></a>
+          <a><span class="frm07">Cat Eye</span></a>
+          <a><span class="frm08">Squared Cat Eye</span></a>
+        </li>
+        <li>
+          <a><span class="frm09">Oval</span></a>
+          <a><span class="frm10">Modified Round</span></a>
+          <a><span class="frm11">Modified Oval</span></a>
+          <a><span class="frm12">Wayfarer</span></a>
+        </li>
+        <li>
+          <a><span class="frm13">Aviator</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		// Handler for Shape Links
+		$('#shapePnl a').click(function() {
+			var shapeName = $(this).attr('class').split(' ')[0];
+			$(this).addClass('selected').siblings().removeClass('selected');
+			$('#facePnl').attr('class', shapeName);
+			$('#infoPnl div.' + shapeName).show().siblings().hide();
+		});
+		
+		// Handler for Frame Links
+		$('#framePnl span[class*="frm"]').click(function() {
+			var frameName = $(this).attr('class');
+			$('#framePnl a.selected').removeClass('selected');
+			$(this).parent().addClass('selected');
+			$('#lrgFrame').attr('class', frameName);
+		});
+					
+		// Frame Carousel With Rewind
+		var width = 720;
+		var current = 1;
+		var count = $('ul#frameSets li').size();
+		$('a.prvSet').click(function(){
+			if(current > 1){
+				$('ul#frameSets li').animate({left: '+=' + width + 'px'}, 500);
+				current--;
+			}else{
+				$('ul#frameSets li').animate({left: '-' + (count-1) * width + 'px'}, 500);
+				current=count;
+			}
+			return false;
+		});
+		$('a.nxtSet').click(function(){
+			if(current < count){
+				$('ul#frameSets li').animate({left: '-=' + width + 'px'}, 500);
+				current++;
+			}else{
+				$('ul#frameSets li').animate({left: '0px'}, 500);
+				current=1;
+			}
+			return false;
+		});
+		
+
+
+    
+		// Show Frame Selector
+		$('a.lnchFrmSlctr').click(function(e) {
+            (e.preventDefault) ? e.preventDefault() : e.returnValue = false;
+			$.fancybox(
+            {
+                'autoSize': false,
+                'speedIn': 600,
+                'speedOut': 200,
+                'transitionIn': 'elastic',
+                'type':'inline',
+                'href': 'div#frameSelector'
+            });
+            return false;
+		});
+	});
+	
+</script>
