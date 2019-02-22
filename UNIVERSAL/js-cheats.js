@@ -209,6 +209,17 @@ $('.wrap__navigation .wrap--inner').attr('style','max-width: 1240px;');
 
 
 
+//-------------------------------//
+STAFF AURORA AND OTHER THEMES FIX ON HOME PAGE
+//-------------------------------//
+
+//-----------START---------------//
+          
+$('.testimonials-item--content').removeClass('testimonials__content');// Credits to: Ariel :*
+
+//------------END----------------//
+
+
 
 
 
